@@ -1,0 +1,22 @@
+.circle_button {
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle_button::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transform: rotateZ(45deg);
+  border-radius: 50%;
+  box-shadow: inset 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.circle_button::after {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  transform: rotateZ(220deg);
+  border-radius: 50%;
+  box-shadow: inset 8px 8px rgba(0, 0, 0, 0.2);
+}
